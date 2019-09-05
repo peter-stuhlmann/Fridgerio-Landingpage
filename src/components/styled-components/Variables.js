@@ -30,3 +30,10 @@ export const Margin = {
   PrimaryMargin: '15px',
   SecondaryMargin: '5px',
 };
+
+// Screen size
+export const ScreenSize = {
+  Desktop: '1170px',
+  Tablet: '900px',
+  Mobil: '480px',
+};
