@@ -6,10 +6,12 @@ import Home from './Home';
 import LegalNotice from './LegalNotice';
 import PrivacyPolicy from './PrivacyPolicy';
 import NotFound from './NotFound';
+import { GlobalStyles } from './styled-components/GlobalStyles';
 
 function App() {
   return (
     <BrowserRouter>
+      <GlobalStyles />
       <Header />
       <main>
         <Switch>
