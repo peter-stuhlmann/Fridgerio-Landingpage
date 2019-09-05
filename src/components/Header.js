@@ -1,7 +1,19 @@
-import React, { Fragment } from 'react';
+import React from 'react';
+import { Header, Logo } from './styled-components/Header';
+import { Link } from 'react-router-dom';
 
-function Header() {
-  return <Fragment>Header</Fragment>;
+function HeaderComponent() {
+  return (
+    <Header>
+      <div className="wrapper">
+        <Logo>
+          <Link to="/">
+            <p className="site-title">Fridgerio</p>
+          </Link>
+        </Logo>
+      </div>
+    </Header>
+  );
 }
 
-export default Header;
+export default HeaderComponent;
