@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Header from './Header';
-import Footer from './Footer';
+import HeaderComponent from './Header';
+import FooterComponent from './Footer';
 import Home from './Home';
 import LegalNotice from './LegalNotice';
 import PrivacyPolicy from './PrivacyPolicy';
@@ -12,7 +12,7 @@ function App() {
   return (
     <BrowserRouter>
       <GlobalStyles />
-      <Header />
+      <HeaderComponent />
       <main>
         <Switch>
           <Route exact path="/" component={Home} />
@@ -21,7 +21,7 @@ function App() {
           <Route component={NotFound} />
         </Switch>
       </main>
-      <Footer />
+      <FooterComponent />
     </BrowserRouter>
   );
 }
