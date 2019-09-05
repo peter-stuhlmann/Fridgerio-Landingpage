@@ -4,14 +4,17 @@ import { Colors, Padding } from './Variables';
 
 const StyledHeader = styled.header`
   background-color: ${props => props.background || Colors.TertiaryColor};
+  padding: ${props => props.padding || Padding.PrimaryPadding};
   margin: 0;
   width: 100%;
+  box-sizing: border-box;
 `;
-export const Header = props => <StyledHeader {...props} />;
+export const Header = props => (
+  <StyledHeader background={props.color}>{props.children}</StyledHeader>
+);
 
 const StyledLogo = styled.div`
   line-height: 1.2;
-  padding: ${props => props.padding || Padding.PrimaryPadding};
   text-align: left;
   a {
     text-decoration: none;
