@@ -42,11 +42,11 @@ const Subscribe = styled.div`
       display: block;
       width: 300px;
       border: none;
-      border-bottom: 1px solid ${Colors.TertiaryColor};
       border-radius: 5px;
-    }
-    input:focus {
-      outline: none;
+    
+      &:focus {
+        outline: none;
+      }
     }
 
     button {
@@ -57,6 +57,10 @@ const Subscribe = styled.div`
       border-radius: 5px;
       padding: ${Padding.SecondaryPadding} ${Padding.PrimaryPadding};
       cursor: pointer;
+          
+      &:focus {
+        outline: none;
+      }
     }
   }
 `;
