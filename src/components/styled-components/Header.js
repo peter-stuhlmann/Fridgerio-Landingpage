@@ -4,7 +4,7 @@ import { Colors, Padding } from './Variables';
 
 const StyledHeader = styled.header`
   background-color: ${props => props.background || Colors.TertiaryColor};
-  padding: ${props => props.padding || Padding.PrimaryPadding};
+  padding: ${props => props.padding || `${Padding.PrimaryPadding} 0`};
   margin: 0;
   width: 100%;
   box-sizing: border-box;

@@ -24,6 +24,7 @@ const StyledGlobalStyles = createGlobalStyle`
       width: 100%;
       max-width: 1170px;
       margin: 0 auto;
+      padding: 15px;
       box-sizing: border-box;
     }
   }
