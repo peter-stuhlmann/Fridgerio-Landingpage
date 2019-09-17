@@ -2,13 +2,14 @@ import React, { Fragment } from 'react';
 import { StoreIcons, Smartphone } from './styled-components/Images';
 import { FlexDiv } from './styled-components/Boxes';
 import Input from './Input';
+import Share from './Share';
 
 function Home() {
   return (
     <Fragment>
       <FlexDiv>
         <div>
-          <h1>Lorem isum dolor sit amet</h1>
+          <h1>Lorem ipsum dolor sit amet</h1>
           <p>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
@@ -25,6 +26,7 @@ function Home() {
               <img src={require('../img/app-store.svg')} alt="App Store" />
             </a>
           </StoreIcons>
+          <Share />
         </div>
         <Smartphone>
           <img
