@@ -1,140 +1,62 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Button } from './styled-components/Buttons';
-import { Colors } from './styled-components/Variables';
+import { Colors, Padding, FontSize } from './styled-components/Variables';
+import Mailchimp from 'react-mailchimp-form';
 
 export default function Input() {
   return (
     <Subscribe>
-      <StyledInput>
-        <div className="group">
-          <input type="text" required />
-          <span className="highlight"></span>
-          <span className="bar"></span>
-          <label>Email</label>
-        </div>
-      </StyledInput>
-      <Button label="Anmelden" />
+      <Mailchimp
+        action="https://peter-stuhlmann.us4.list-manage.com/subscribe/post?u=bf5dc851fadd523f3862596c5&amp;id=e9733deecb"
+        fields={[
+          {
+            name: 'EMAIL',
+            placeholder: 'Email',
+            type: 'email',
+            required: true,
+          },
+        ]}
+        messages={{
+          sending: 'Wird gesendet ...',
+          success: 'Danke für Deine Anmeldung!',
+          error: 'Sorry, es gab leider einen Fehler.',
+          empty: 'Bitte gib eine gültige E-Mail-Adresse an.',
+          duplicate: 'Sorry, zu viele Anmeldeversuche für diese Adresse.',
+          button: 'Anmelden',
+        }}
+        className="subscribe"
+      />
     </Subscribe>
   );
 }
 
 const Subscribe = styled.div`
-  display: flex
-  flex-flow: row wrap
-  margin: 50px 0
-`;
+  .subscribe {
+    display: flex
+    flex-flow: row wrap;
 
-const StyledInput = styled.form`
-  .group {
-    position: relative;
-    margin: 0 10px 0 0;
-    flex: 0 0 70%;
-  }
-
-  input {
-    font-size: 18px;
-    padding: 10px;
-    display: block;
-    width: 300px;
-    border: none;
-    border-bottom: 1px solid ${Colors.TertiaryColor};
-    border-radius: 5px;
-  }
-  input:focus {
-    outline: none;
-  }
-
-  label {
-    color: #999;
-    font-size: 18px;
-    font-weight: normal;
-    position: absolute;
-    pointer-events: none;
-    left: 5px;
-    top: 10px;
-    transition: 0.2s ease all;
-    -moz-transition: 0.2s ease all;
-    -webkit-transition: 0.2s ease all;
-  }
-
-  input:focus ~ label,
-  input:valid ~ label {
-    top: -20px;
-    font-size: 16px;
-    color: #5264ae;
-  }
-
-  .bar {
-    position: relative;
-    display: block;
-    width: 320px;
-  }
-  .bar:before,
-  .bar:after {
-    content: '';
-    height: 2px;
-    width: 0;
-    bottom: 1px;
-    position: absolute;
-    background: #5264ae;
-    transition: 0.2s ease all;
-    -moz-transition: 0.2s ease all;
-    -webkit-transition: 0.2s ease all;
-  }
-  .bar:before {
-    left: 50%;
-  }
-  .bar:after {
-    right: 50%;
-  }
-
-  input:focus ~ .bar:before,
-  input:focus ~ .bar:after {
-    width: 50%;
-  }
-
-  .highlight {
-    position: absolute;
-    height: 60%;
-    width: 100px;
-    top: 25%;
-    left: 0;
-    pointer-events: none;
-    opacity: 0.5;
-  }
-
-  input:focus ~ .highlight {
-    -webkit-animation: inputHighlighter 0.3s ease;
-    -moz-animation: inputHighlighter 0.3s ease;
-    animation: inputHighlighter 0.3s ease;
-  }
-
-  @-webkit-keyframes inputHighlighter {
-    from {
-      background: #5264ae;
+    input {
+      font-size: ${FontSize.normal};
+      padding: 10px;
+      margin-right: 10px;
+      display: block;
+      width: 300px;
+      border: none;
+      border-bottom: 1px solid ${Colors.TertiaryColor};
+      border-radius: 5px;
     }
-    to {
-      width: 0;
-      background: transparent;
+    input:focus {
+      outline: none;
     }
-  }
-  @-moz-keyframes inputHighlighter {
-    from {
-      background: #5264ae;
-    }
-    to {
-      width: 0;
-      background: transparent;
-    }
-  }
-  @keyframes inputHighlighter {
-    from {
-      background: #5264ae;
-    }
-    to {
-      width: 0;
-      background: transparent;
+
+    button {
+      background-color: ${Colors.TertiaryColor};
+      color: ${Colors.LightColor};
+      display: inline-block;
+      border: none;
+      border-radius: 5px;
+      padding: ${Padding.SecondaryPadding} ${Padding.PrimaryPadding};
+      cursor: pointer;
     }
   }
 `;
