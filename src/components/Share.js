@@ -23,7 +23,7 @@ export default function Share() {
           <span>Facebook</span>
         </a>
         <a
-          href="https://twitter.com/share?url=https://fridgerio.de/"
+          href="https://twitter.com/intent/tweet?hashtags=fridgerio&amp;text=Kauf%20nichts%20zu%20Essen,%20Du%20hast%20noch%20genug!%20Und%20Fridgerio%20sagt%20Dir%20was!&amp;url=https%3A%2F%2Ffridgerio.de&amp;via=fridgerio"
           target="_blank"
           rel="noopener"
         >
