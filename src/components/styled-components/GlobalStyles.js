@@ -6,6 +6,7 @@ const StyledGlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     font-size: ${props => props.size || FontSize.normal};
+    line-height: 1.6;
     background-color: ${props => props.background || Colors.SecondaryColor};
     font-family: 'Open Sans', sans-serif;
 
