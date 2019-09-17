@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Colors, Margin, Padding } from './Variables';
 
 const StyledFooter = styled.footer`
-  background-color: ${props => props.background || Colors.PrimaryColor};
+  background-color: ${props => props.background || Colors.TertiaryColor};
   color: ${props => props.color || Colors.LightColor};
   line-height: 1.6;
   margin: ${props => props.margin || `${Margin.PrimaryMargin} 0 0 0`};
