@@ -2,8 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledStoreIcons = styled.section`
+  margin: 150px 0;
+
   img {
-    width: 220px;
+    height: 55px;
+    margin-right: 10px;
   }
 `;
 export const StoreIcons = props => <StyledStoreIcons {...props} />;

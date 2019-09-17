@@ -34,6 +34,7 @@ const Subscribe = styled.div`
   .subscribe {
     display: flex
     flex-flow: row wrap;
+    margin: 50px 0;
 
     input {
       font-size: ${FontSize.normal};
