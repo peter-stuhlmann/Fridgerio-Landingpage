@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import { StoreIcons, Smartphone } from './styled-components/Images';
 import { FlexDiv } from './styled-components/Boxes';
+import Input from './Input';
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
             et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
             Lorem ipsum dolor sit amet.
           </p>
+          <Input />
           <StoreIcons>
             <a href="https://play.google.com/store/apps">
               <img src={require('../img/google-play.png')} alt="Google Play" />
