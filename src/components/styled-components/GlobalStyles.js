@@ -13,6 +13,8 @@ const StyledGlobalStyles = createGlobalStyle`
       width: 100%;
       max-width: ${ScreenSize.Desktop};
       margin: 30px auto;
+      padding: 15px;
+      box-sizing: border-box;
     }
 
     .wrapper {
