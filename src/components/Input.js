@@ -21,7 +21,7 @@ export default function Input() {
           success: 'Danke für Deine Anmeldung!',
           error: 'Sorry, es gab leider einen Fehler.',
           empty: 'Bitte gib eine gültige E-Mail-Adresse an.',
-          duplicate: 'Sorry, zu viele Anmeldeversuche für diese Adresse.',
+          duplicate: 'Diese E-Mail-Adresse ist bereits registriert.',
           button: 'Anmelden',
         }}
         className="subscribe"
