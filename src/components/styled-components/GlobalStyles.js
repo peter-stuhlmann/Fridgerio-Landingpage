@@ -6,7 +6,8 @@ const StyledGlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     font-size: ${props => props.size || FontSize.normal};
-    background-color: ${props => props.background || Colors.LightColor};
+    background-color: ${props => props.background || Colors.SecondaryColor};
+    font-family: 'Open Sans', sans-serif;
 
     main {
       width: 100%;
