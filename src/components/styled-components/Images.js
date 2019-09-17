@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledStoreIcons = styled.section`
-  margin: 150px 0;
+  margin: 90px 0 70px 0;
 
   img {
     height: 55px;

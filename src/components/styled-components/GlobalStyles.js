@@ -27,6 +27,12 @@ const StyledGlobalStyles = createGlobalStyle`
       padding: 15px;
       box-sizing: border-box;
     }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background-color: ${Colors.TertiaryColor};
+    }
   }
 `;
 export const GlobalStyles = props => <StyledGlobalStyles size={props.size} />;

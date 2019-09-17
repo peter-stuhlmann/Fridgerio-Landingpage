@@ -18,6 +18,7 @@ function Home() {
             Lorem ipsum dolor sit amet.
           </p>
           <Input />
+          <hr />
           <StoreIcons>
             <a href="https://play.google.com/store/apps">
               <img src={require('../img/google-play.png')} alt="Google Play" />
