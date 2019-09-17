@@ -24,6 +24,8 @@ function LegalNotice() {
 
   return (
     <Fragment>
+      <h1>Impressum</h1>
+
       {loading && <p>Inhalt wird geladen ...</p>}
 
       {error && (

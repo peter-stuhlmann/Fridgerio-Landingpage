@@ -25,6 +25,8 @@ function PrivacyPolicy() {
 
   return (
     <Fragment>
+      <h1>Datenschutzerklärung</h1>
+
       {loading && <p>Inhalt wird geladen ...</p>}
 
       {error && (
