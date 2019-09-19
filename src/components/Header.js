@@ -12,7 +12,7 @@ function HeaderComponent() {
             <p className="site-title">Fridgerio</p>
           </Link>
         </Logo>
-        <MainNavigationComponent />
+        {/* <MainNavigationComponent /> */}
       </div>
     </Header>
   );
