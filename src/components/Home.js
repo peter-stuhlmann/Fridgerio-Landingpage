@@ -3,10 +3,12 @@ import { StoreIcons, Smartphone } from './styled-components/Images';
 import { FlexDiv } from './styled-components/Boxes';
 import Input from './Input';
 import Share from './Share';
+import { BodyBG } from './styled-components/GlobalStyles';
 
 function Home() {
   return (
     <Fragment>
+      <BodyBG PrimaryColor />
       <FlexDiv>
         <div>
           <h1>Lorem ipsum dolor sit amet</h1>

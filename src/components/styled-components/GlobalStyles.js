@@ -1,13 +1,13 @@
 import React from 'react';
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import { FontSize, Colors, ScreenSize } from './Variables';
 
 const StyledGlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     font-size: ${props => props.size || FontSize.normal};
+    background-color: ${props => props.BGcolor || Colors.LightColor};
     line-height: 1.6;
-    background-color: ${props => props.background || Colors.SecondaryColor};
     font-family: 'Open Sans', sans-serif;
 
     main {
@@ -36,4 +36,11 @@ const StyledGlobalStyles = createGlobalStyle`
     }
   }
 `;
-export const GlobalStyles = props => <StyledGlobalStyles size={props.size} />;
+export const GlobalStyles = props => <StyledGlobalStyles size={props.size} BGcolor={props.BGcolor} />;
+
+const StyledBodyBG = createGlobalStyle`
+  body {
+    background-color: ${props => (props.PrimaryColor ? `${Colors.PrimaryColor}` : 'white')};
+  }
+`
+export const BodyBG = props => <StyledBodyBG PrimaryColor={props.PrimaryColor} />;
