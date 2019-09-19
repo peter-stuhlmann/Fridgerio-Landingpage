@@ -72,9 +72,9 @@ const ShareLinks = styled.div`
     font-size: ${FontSize.extraSmall};
     font-family: 'Open Sans', sans-serif;
     border-radius: 5px;
-    color: ${Colors.DarkColor};
-    background-color: ${Colors.PrimaryUtilityColor};
-    border: 1px solid #ccc;
+    color: ${Colors.TertiaryColor};
+    background-color: ${Colors.SecondaryColor};
+    border: 2px solid ${Colors.TertiaryColor};
     line-height: 23px;
     padding: ${Padding.SecondaryPadding} ${Padding.PrimaryPadding};
     margin: 3px;
@@ -82,7 +82,7 @@ const ShareLinks = styled.div`
 
     &:hover {
       color: ${Colors.LightColor};
-      background-color: #bdbdbd;
+      background-color: ${Colors.PrimaryColor};
       text-decoration: none;
 
       svg {
