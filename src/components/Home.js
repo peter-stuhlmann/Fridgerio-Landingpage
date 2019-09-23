@@ -22,12 +22,8 @@ function Home() {
           <Input />
           <hr />
           <StoreIcons>
-            <a href="https://play.google.com/store/apps">
-              <img src={require('../img/google-play.png')} alt="Google Play" />
-            </a>
-            <a href="https://apps.apple.com/de/app/xcode/id497799835">
-              <img src={require('../img/app-store.svg')} alt="App Store" />
-            </a>
+            <img onClick={NotAvailableYet} src={require('../img/google-play.png')} alt="Google Play" />
+            <img onClick={NotAvailableYet} src={require('../img/app-store.svg')} alt="App Store" />
           </StoreIcons>
           <Share />
         </div>
@@ -40,6 +36,10 @@ function Home() {
       </FlexDiv>
     </Fragment>
   );
+}
+
+const NotAvailableYet = () => {
+  alert("Die App ist noch nicht im Store verfügbar. Wenn Du Dich in unseren Newsletter einträgst, halten wir Dich gerne auf dem Laufenden.");
 }
 
 export default Home;
