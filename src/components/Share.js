@@ -73,7 +73,7 @@ const ShareLinks = styled.div`
     font-family: 'Open Sans', sans-serif;
     border-radius: 5px;
     color: ${Colors.TertiaryColor};
-    background-color: ${Colors.SecondaryColor};
+    background-color: ${Colors.PrimaryColor};
     border: 2px solid ${Colors.TertiaryColor};
     line-height: 23px;
     padding: ${Padding.SecondaryPadding} ${Padding.PrimaryPadding};
@@ -81,12 +81,12 @@ const ShareLinks = styled.div`
     transition: 0.2s ease all;
 
     &:hover {
-      color: ${Colors.LightColor};
-      background-color: ${Colors.PrimaryColor};
+      color: ${Colors.TertiaryColor};
+      background-color: ${Colors.SecondaryColor};
       text-decoration: none;
 
       svg {
-        fill: ${Colors.LightColor};
+        fill: ${Colors.TertiaryColor};
       }
     }
 
@@ -99,6 +99,7 @@ const ShareLinks = styled.div`
       height: 16px;
       margin-right: 8px;
       margin-bottom: -3px;
+      fill: ${Colors.TertiaryColor};
     }
   }
 `;
