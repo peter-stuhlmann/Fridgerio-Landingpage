@@ -1,14 +1,20 @@
 import React from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 import { FontSize, Colors, ScreenSize } from './Variables';
+import FridgerioFont from '../../assets/fonts/Ebrima.ttf';
 
 const StyledGlobalStyles = createGlobalStyle`
+  @font-face {
+    font-family: 'FridgerioFont';
+    src: url(${FridgerioFont});
+  }
+
   body {
     margin: 0;
     font-size: ${props => props.size || FontSize.normal};
     background-color: ${props => props.BGcolor || Colors.LightColor};
     line-height: 1.6;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'FridgerioFont';
 
     main {
       width: 100%;

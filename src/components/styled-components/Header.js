@@ -16,12 +16,14 @@ export const Header = props => (
 const StyledLogo = styled.div`
   line-height: 1.2;
   text-align: left;
+
   a {
     text-decoration: none;
   }
+  
   .site-title {
     font-size: 3em;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'FridgerioFont', sans-serif;
     margin: 0;
     display: inline-block;
     color: ${props => props.background || Colors.LightColor};
