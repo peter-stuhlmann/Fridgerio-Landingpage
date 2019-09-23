@@ -7,7 +7,7 @@ export default function Input() {
   return (
     <Subscribe>
       <Mailchimp
-        action="https://peter-stuhlmann.us4.list-manage.com/subscribe/post?u=bf5dc851fadd523f3862596c5&amp;id=e9733deecb"
+        action="https://peter-stuhlmann.us4.list-manage.com/subscribe/post?u=bf5dc851fadd523f3862596c5&amp;id=ad1cfa1319"
         fields={[
           {
             name: 'EMAIL',
