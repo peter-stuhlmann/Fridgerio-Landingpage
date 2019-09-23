@@ -1,5 +1,5 @@
 import React from 'react';
-import { Footer, FooterNav } from './styled-components/Footer';
+import { Footer, FooterNav, LanguageNav } from './styled-components/Footer';
 import { Link } from 'react-router-dom';
 
 function FooterComponent() {
@@ -9,6 +9,20 @@ function FooterComponent() {
         <p>
           &copy; <Link to="/">Fridgerio</Link>, 2019
         </p>
+        
+        {/* Currently the browser language is automatically determined.
+          <LanguageNav>
+            <ul>
+              <li>
+                <Link to="/de/">DE</Link>
+              </li>
+              <li>
+                <Link to="/en/">EN</Link>
+              </li>
+            </ul>
+          </LanguageNav>
+        */}
+
         <FooterNav>
           <ul>
             <li>
