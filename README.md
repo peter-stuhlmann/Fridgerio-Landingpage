@@ -1,3 +1,5 @@
+![Fridgerio](./assets/readme-header.png)
+
 # Fridgerio Landingpage
 
 ![Fridgerio](https://img.shields.io/badge/Fridgerio-blue.svg)
@@ -9,6 +11,7 @@
 ---
 
 [![Live version](https://img.shields.io/badge/Live%20version-blue.svg)](https://fridgerio.peter-stuhlmann.now.sh) &nbsp; [fridgerio.peter-stuhlmann.now.sh](https://fridgerio.peter-stuhlmann.now.sh)
+
 
 ---
 
