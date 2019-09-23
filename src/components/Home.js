@@ -6,36 +6,71 @@ import Share from './Share';
 import { BodyBG } from './styled-components/GlobalStyles';
 
 function Home() {
-  return (
-    <Fragment>
-      <BodyBG PrimaryColor />
-      <FlexDiv>
-        <div>
-          <h1>Lorem ipsum dolor sit amet</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet.
-          </p>
-          <Input />
-          <hr />
-          <StoreIcons>
-            <img onClick={NotAvailableYet} src={require('../img/google-play.png')} alt="Google Play" />
-            <img onClick={NotAvailableYet} src={require('../img/app-store.svg')} alt="App Store" />
-          </StoreIcons>
-          <Share />
-        </div>
-        <Smartphone>
-          <img
-            src={require('../img/smartphone.svg')}
-            alt="Fridgerio Smartphone"
-          />
-        </Smartphone>
-      </FlexDiv>
-    </Fragment>
-  );
+  if (navigator.language.indexOf("de") > -1) {
+    return (
+      <Fragment>
+        <BodyBG PrimaryColor />
+        <FlexDiv>
+          <div>
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+              et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+              Lorem ipsum dolor sit amet.
+            </p>
+            <Input />
+            <hr />
+            <StoreIcons>
+              <img onClick={NotAvailableYet} src={require('../img/google-play.png')} alt="Google Play" />
+              <img onClick={NotAvailableYet} src={require('../img/app-store.svg')} alt="App Store" />
+            </StoreIcons>
+            <Share />
+          </div>
+          <Smartphone>
+            <img
+              src={require('../img/smartphone.svg')}
+              alt="Fridgerio Smartphone"
+            />
+          </Smartphone>
+        </FlexDiv>
+      </Fragment>
+    );
+  } else {
+    return (
+      <Fragment>
+        <BodyBG PrimaryColor />
+        <FlexDiv>
+          <div>
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+              et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+              Lorem ipsum dolor sit amet.
+            </p>
+            <Input />
+            <hr />
+            <StoreIcons>
+              <img onClick={NotAvailableYet} src={require('../img/google-play.png')} alt="Google Play" />
+              <img onClick={NotAvailableYet} src={require('../img/app-store.svg')} alt="App Store" />
+            </StoreIcons>
+            <Share />
+          </div>
+          <Smartphone>
+            <img
+              src={require('../img/smartphone.svg')}
+              alt="Fridgerio Smartphone"
+            />
+          </Smartphone>
+        </FlexDiv>
+      </Fragment>
+    );
+  }
+
+  
 }
 
 const NotAvailableYet = () => {
