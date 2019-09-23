@@ -62,3 +62,48 @@ const StyledFooterNav = styled.nav`
   }
 `;
 export const FooterNav = props => <StyledFooterNav {...props} />;
+
+const StyledLanguageNav = styled.nav`
+  display: inline-block;
+  text-align: center;
+  margin-right: -555px;
+  padding: 15px;
+  box-sizing: border-box;
+  
+  @media (max-width: 768px) {
+    flex: 0 0 100%;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline;
+      font-size: 1em;
+      margin-left: 15px;
+      white-space: nowrap;
+
+      &::after {
+        content: "|";
+        margin-left: 15px;
+        z-index: 2;
+        color: #fff;
+      }
+      &:last-child::after {
+        display: none
+      }
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        transition: 0.3s ease all;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+`;
+export const LanguageNav = props => <StyledLanguageNav {...props} />;
