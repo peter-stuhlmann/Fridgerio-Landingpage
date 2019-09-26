@@ -26,6 +26,9 @@ function FooterComponent() {
         <FooterNav>
           <ul>
             <li>
+              <Link to="/hilfe">Hilfe/FAQ</Link>
+            </li>
+            <li>
               <Link to="/impressum">Impressum</Link>
             </li>
             <li>
