@@ -4,6 +4,7 @@ import ReactGA from 'react-ga';
 import HeaderComponent from './Header';
 import FooterComponent from './Footer';
 import Home from './Home';
+import Help from './Help';
 import LegalNotice from './LegalNotice';
 import PrivacyPolicy from './PrivacyPolicy';
 import NotFound from './NotFound';
@@ -22,6 +23,7 @@ function App() {
       <main>
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route path="/hilfe" component={Help} />
           <Route path="/impressum" component={LegalNotice} />
           <Route path="/datenschutzerklaerung" component={PrivacyPolicy} />
           <Route component={NotFound} />
