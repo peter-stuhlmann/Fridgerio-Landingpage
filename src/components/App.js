@@ -9,6 +9,7 @@ import LegalNotice from './LegalNotice';
 import PrivacyPolicy from './PrivacyPolicy';
 import NotFound from './NotFound';
 import { GlobalStyles } from './styled-components/GlobalStyles';
+import QR from './QR';
 
 function App() {
   // Google Analytics
@@ -23,6 +24,7 @@ function App() {
       <main>
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route path="/qr" component={QR} />
           <Route path="/hilfe" component={Help} />
           <Route path="/impressum" component={LegalNotice} />
           <Route path="/datenschutzerklaerung" component={PrivacyPolicy} />
