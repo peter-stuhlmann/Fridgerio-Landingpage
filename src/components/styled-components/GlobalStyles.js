@@ -19,6 +19,7 @@ const StyledGlobalStyles = createGlobalStyle`
     main {
       width: 100%;
       max-width: ${ScreenSize.Desktop};
+      min-height: 70vh; 
       margin: 30px auto;
       padding: 15px;
       box-sizing: border-box;
