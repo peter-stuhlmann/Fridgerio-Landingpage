@@ -10,6 +10,7 @@ import PrivacyPolicy from './PrivacyPolicy';
 import NotFound from './NotFound';
 import { GlobalStyles } from './styled-components/GlobalStyles';
 import QR from './QR';
+import CookieNotice from './CookieNotice';
 
 function App() {
   // Google Analytics
@@ -19,6 +20,7 @@ function App() {
 
   return (
     <BrowserRouter>
+      <CookieNotice />
       <GlobalStyles />
       <HeaderComponent />
       <main>
