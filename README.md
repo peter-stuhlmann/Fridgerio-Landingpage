@@ -17,7 +17,19 @@
 
 ## License
 
-Licensed under the [MIT](https://github.com/peter-stuhlmann/Fridgerio-Landingpage/blob/master/LICENSE) License.
+### Code
+
+The code is licensed under the [MIT](https://github.com/peter-stuhlmann/Fridgerio-Landingpage/blob/master/LICENSE) License.
+
+### Images
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />The Fridgerio logo (designed by Peter R. Stuhlmann) is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+
+The smartphone image (without the Fridgerio logo) by <a href="https://pixabay.com/users/OpenClipart-Vectors-30363/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=160307">OpenClipart-Vectors</a> is licensed under the <a href="https://pixabay.com/service/license/">Pixabay License</a>.
+
+Apple, the Apple logo, iPhone, and iPad are trademarks of Apple Inc., registered in the U.S. and other countries and regions. App Store is a service mark of Apple Inc.
+
+Google Play and the Google Play logo are trademarks of Google LLC.
 
 ---
 
