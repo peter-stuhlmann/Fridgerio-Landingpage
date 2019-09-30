@@ -25,6 +25,10 @@ const StyledGlobalStyles = createGlobalStyle`
       box-sizing: border-box;
     }
 
+    h1 {
+      font-size: ${props => props.size || '29px'};
+    }
+
     .wrapper {
       display: flex;
       justify-content: space-between;
