@@ -27,6 +27,8 @@ The code is licensed under the [MIT](https://github.com/peter-stuhlmann/Fridgeri
 
 The smartphone image (without the Fridgerio logo) by <a href="https://pixabay.com/users/OpenClipart-Vectors-30363/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=160307">OpenClipart-Vectors</a> is licensed under the <a href="https://pixabay.com/service/license/">Pixabay License</a>.
 
+The FontAwesome icons are licensed under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a>.
+
 Apple, the Apple logo, iPhone, and iPad are trademarks of Apple Inc., registered in the U.S. and other countries and regions. App Store is a service mark of Apple Inc.
 
 Google Play and the Google Play logo are trademarks of Google LLC.
