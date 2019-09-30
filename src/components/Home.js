@@ -17,14 +17,16 @@ function Home() {
               Mit Fridgerio kannst Du Deine Lebensmittel in einer mobilen App speichern und Dich rechtzeitig informieren lassen, bevor diese das Mindesthaltbarkeitsdatum erreichen. So kannst Du nicht nur Lebensmittelverschwendung entgegenwirken, sondern auch Geld sparen. 
             </p>
             <p>
-              Verpasse keine Neuigkeiten: Trage Dich jetzt in unseren Newsletter ein und bekomme Updates rund um die Fridgerio App (z.B. Veröffentlichungstermin). 
+              Verpasse keine Neuigkeiten: <strong>Trage Dich jetzt in unseren Newsletter ein</strong> und bekomme Updates rund um die Fridgerio App (z.B. Veröffentlichungstermin). 
             </p>
             <Input />
             <hr />
-            <StoreIcons>
-              <img onClick={NotAvailableYet} src={require('../img/google-play.png')} alt="Google Play" />
-              <img onClick={NotAvailableYet} src={require('../img/app-store.svg')} alt="App Store" />
-            </StoreIcons>
+            {/* 
+              <StoreIcons>
+                <img onClick={NotAvailableYet} src={require('../img/google-play.png')} alt="Google Play" />
+                <img onClick={NotAvailableYet} src={require('../img/app-store.svg')} alt="App Store" />
+              </StoreIcons>
+            */}
             <Share />
           </div>
           <Smartphone>
@@ -52,10 +54,12 @@ function Home() {
             </p>
             <Input />
             <hr />
-            <StoreIcons>
-              <img onClick={NotAvailableYet} src={require('../img/google-play.png')} alt="Google Play" />
-              <img onClick={NotAvailableYet} src={require('../img/app-store.svg')} alt="App Store" />
-            </StoreIcons>
+            {/* 
+              <StoreIcons>
+                <img onClick={NotAvailableYet} src={require('../img/google-play.png')} alt="Google Play" />
+                <img onClick={NotAvailableYet} src={require('../img/app-store.svg')} alt="App Store" />
+              </StoreIcons>
+            */}
             <Share />
           </div>
           <Smartphone>
