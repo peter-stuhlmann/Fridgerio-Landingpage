@@ -17,12 +17,12 @@ export default function Input() {
           },
         ]}
         messages={{
-          sending: 'Wird gesendet ...',
-          success: 'Danke für Deine Anmeldung!',
-          error: 'Sorry, es gab leider einen Fehler.',
-          empty: 'Bitte gib eine gültige E-Mail-Adresse an.',
-          duplicate: 'Diese E-Mail-Adresse ist bereits registriert.',
-          button: 'Anmelden',
+          sending: (navigator.language.indexOf("de") > -1) ? 'Wird gesendet ...' : 'Sending ...',
+          success: (navigator.language.indexOf("de") > -1) ? 'Danke für Deine Anmeldung!' : 'Thank you for subscribing!',
+          error: (navigator.language.indexOf("de") > -1) ? 'Sorry, es gab leider einen Fehler.' : 'An unexpected internal error has occured.',
+          empty: (navigator.language.indexOf("de") > -1) ? 'Bitte gib eine gültige E-Mail-Adresse an.' : 'You must write an e-mail.',
+          duplicate: (navigator.language.indexOf("de") > -1) ? 'Diese E-Mail-Adresse ist bereits registriert.' : 'Too many subscribe attempts for this email address',
+          button: (navigator.language.indexOf("de") > -1) ? 'Anmelden' : 'Subscribe',
         }}
         className="subscribe"
       />

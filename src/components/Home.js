@@ -69,12 +69,14 @@ function Home() {
       </Fragment>
     );
   }
-
-  
 }
 
 const NotAvailableYet = () => {
-  alert("Die App ist noch nicht im Store verfügbar. Wenn Du Dich in unseren Newsletter einträgst, halten wir Dich gerne auf dem Laufenden.");
+  if (navigator.language.indexOf("de") > -1) {
+    alert("Die App ist noch nicht im Store verfügbar. Wenn Du Dich in unseren Newsletter einträgst, halten wir Dich gerne auf dem Laufenden.");
+  } else {
+    alert("The app is not available in the store yet. If you register for our newsletter, we will keep you up to date.")
+  }
 }
 
 export default Home;
