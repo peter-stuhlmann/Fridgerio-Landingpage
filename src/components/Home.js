@@ -12,13 +12,12 @@ function Home() {
         <BodyBG PrimaryColor />
         <FlexDiv>
           <div>
-            <h1>Lorem ipsum dolor sit amet</h1>
+            <h1>Mit Fridgerio Lebensmittelverschwendung verhindern</h1>
             <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-              et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-              Lorem ipsum dolor sit amet.
+              Mit Fridgerio kannst Du Deine Lebensmittel in einer mobilen App speichern und Dich rechtzeitig informieren lassen, bevor diese das Mindesthaltbarkeitsdatum erreichen. So kannst Du nicht nur Lebensmittelverschwendung entgegenwirken, sondern auch Geld sparen. 
+            </p>
+            <p>
+              Verpasse keine Neuigkeiten: Trage Dich jetzt in unseren Newsletter ein und bekomme Updates rund um die Fridgerio App (z.B. Veröffentlichungstermin). 
             </p>
             <Input />
             <hr />
