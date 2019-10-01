@@ -14,6 +14,16 @@ const StyledFooter = styled.footer`
   justify-content: space-between;
   box-sizing: border-box;
 
+  @media (max-width: 768px) {
+    padding: 0;
+  }
+
+  p {
+    @media (max-width: 768px) {
+      margin: auto;
+    }
+  }
+
   a {
     text-decoration: none;
     color: ${props => props.color || Colors.LightColor};
