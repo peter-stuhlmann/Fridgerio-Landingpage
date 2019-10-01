@@ -46,7 +46,7 @@ function Home() {
           <div>
             <h1>Prevent food waste with Fridgerio</h1>
             <p>With Fridgerio you can list your groceries in a mobile app and get informed in time before they reach their best before date. That way you can both prevent food waste and save money.</p>
-            <p>Do not miss any news: Sign up now for our newsletter and get updates about the Fridgerio app (for example, release date).</p>
+            <p>Do not miss any news: <strong>Sign up now for our newsletter</strong> and get updates about the Fridgerio app (for example, release date).</p>
             <Input />
             <hr />
             {/* 
