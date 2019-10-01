@@ -7,6 +7,10 @@ const StyledFlexDiv = styled.div`
   flex-flow: row wrap;
   justify-content: space-between;
 
+  @media (max-width: ${ScreenSize.Mobile}) {
+    flex-flow: column-reverse wrap;
+  }
+
   div {
     flex: 0 0 60%;
 
