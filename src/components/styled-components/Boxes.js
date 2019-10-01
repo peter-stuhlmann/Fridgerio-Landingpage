@@ -8,6 +8,10 @@ const StyledFlexDiv = styled.div`
 
   div {
     flex: 0 0 60%;
+
+    @media (max-width: 768px) {
+      flex: 0 0 100%
+    }
   }
 `;
 export const FlexDiv = props => (
