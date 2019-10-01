@@ -1,6 +1,7 @@
 {
   "version": 2,
   "name": "fridgerio",
+  "alias": ["fridgerio.de", "www.fridgerio.de"],
   "builds": [
     {
       "src": "package.json",
