@@ -151,6 +151,13 @@ const ShareLinks = styled.div`
       text-align: center;
     }
 
+    &:first-child {
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+  
+
     span {
       @media (max-width: 768px) {
         display: none;
