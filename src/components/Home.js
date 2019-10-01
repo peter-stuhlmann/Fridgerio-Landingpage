@@ -44,14 +44,9 @@ function Home() {
         <BodyBG PrimaryColor />
         <FlexDiv>
           <div>
-            <h1>Lorem ipsum dolor sit amet</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-              et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-              Lorem ipsum dolor sit amet.
-            </p>
+            <h1>Prevent food waste with Fridgerio</h1>
+            <p>With Fridgerio you can list your groceries in a mobile app and get informed in time before they reach their best before date. That way you can both prevent food waste and save money.</p>
+            <p>Do not miss any news: Sign up now for our newsletter and get updates about the Fridgerio app (for example, release date).</p>
             <Input />
             <hr />
             {/* 
