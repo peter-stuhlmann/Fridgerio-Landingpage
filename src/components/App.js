@@ -14,7 +14,7 @@ import CookieNotice from './CookieNotice';
 
 function App() {
   // Google Analytics
-  ReactGA.initialize('UA-XXXXXXXX-XX');
+  ReactGA.initialize('UA-62307007-22');
   ReactGA.pageview(window.location.pathname + window.location.search);
   ReactGA.set({ anonymizeIp: true });
 
