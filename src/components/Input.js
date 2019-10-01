@@ -45,12 +45,18 @@ const Subscribe = styled.div`
       border: none;
       border-radius: 5px;
     
+      @media (max-width: 768px) {
+        width: 100%;
+        margin: 0 0 15px 0;
+      }
+
       &:focus {
         outline: none;
       }
     }
 
     button {
+      font-size: ${FontSize.normal};
       background-color: ${Colors.TertiaryColor};
       color: ${Colors.LightColor};
       display: inline-block;
@@ -58,6 +64,11 @@ const Subscribe = styled.div`
       border-radius: 5px;
       padding: ${Padding.SecondaryPadding} ${Padding.PrimaryPadding};
       cursor: pointer;
+
+      @media (max-width: 768px) {
+        width: 100%;
+        padding: 10px;
+      }
           
       &:focus {
         outline: none;

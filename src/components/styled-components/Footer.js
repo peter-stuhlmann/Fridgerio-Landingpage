@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Colors, Margin, Padding } from './Variables';
+import { Colors, Margin, Padding, ScreenSize } from './Variables';
 
 const StyledFooter = styled.footer`
   background-color: ${props => props.background || Colors.TertiaryColor};
@@ -13,6 +13,16 @@ const StyledFooter = styled.footer`
   flex-flow: row wrap;
   justify-content: space-between;
   box-sizing: border-box;
+
+  @media (max-width: ${ScreenSize.Mobile}) {
+    padding: 0;
+  }
+
+  p {
+    @media (max-width: ${ScreenSize.Mobile}) {
+      margin: auto;
+    }
+  }
 
   a {
     text-decoration: none;
@@ -34,7 +44,7 @@ const StyledFooterNav = styled.nav`
   text-align: center;
   padding: 15px;
   box-sizing: border-box;
-  @media (max-width: 768px) {
+  @media (max-width: ${ScreenSize.Mobile}) {
     flex: 0 0 100%;
   }
 
@@ -46,7 +56,7 @@ const StyledFooterNav = styled.nav`
       font-size: 1em;
       margin-left: 25px;
       white-space: nowrap;
-      @media (max-width: 768px) {
+      @media (max-width: ${ScreenSize.Mobile}) {
         margin-left: 0;
         padding: 12.5px;
       }
@@ -70,7 +80,7 @@ const StyledLanguageNav = styled.nav`
   padding: 15px;
   box-sizing: border-box;
   
-  @media (max-width: 768px) {
+  @media (max-width: ${ScreenSize.Mobile}) {
     flex: 0 0 100%;
   }
 

@@ -35,5 +35,5 @@ export const Margin = {
 export const ScreenSize = {
   Desktop: '1170px',
   Tablet: '900px',
-  Mobil: '480px',
+  Mobile: '480px',
 };
