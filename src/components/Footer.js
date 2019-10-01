@@ -68,9 +68,11 @@ function FooterComponent() {
   
           <FooterNav>
             <ul>
-              <li>
-                <Link to="/qr">QR</Link>
-              </li>
+              {/*
+                <li>
+                  <Link to="/qr">QR</Link>
+                </li>
+              */}
               <li>
                 <Link to="/hilfe">Help/FAQ</Link>
               </li>
