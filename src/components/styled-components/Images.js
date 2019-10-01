@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { ScreenSize } from './Variables';
 
 const StyledStoreIcons = styled.section`
   margin: 50px 0 50px 0;
@@ -14,7 +15,7 @@ export const StoreIcons = props => <StyledStoreIcons {...props} />;
 const StyledSmartphone = styled.section`
   flex: 0 0 40%;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${ScreenSize.Mobile}) {
     margin: auto;
   }
 
@@ -24,7 +25,7 @@ const StyledSmartphone = styled.section`
     display: block;
     float: right;
 
-    @media (max-width: 768px) {
+    @media (max-width: ${ScreenSize.Mobile}) {
       margin: 0;
     }
   }

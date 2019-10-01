@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { ScreenSize } from './Variables';
 
 const StyledFlexDiv = styled.div`
   display: flex;
@@ -9,7 +10,7 @@ const StyledFlexDiv = styled.div`
   div {
     flex: 0 0 60%;
 
-    @media (max-width: 768px) {
+    @media (max-width: ${ScreenSize.Mobile}) {
       flex: 0 0 100%
     }
   }
