@@ -6,7 +6,7 @@ function CookieNotice() {
   if (navigator.language.indexOf("de") > -1) {
     return (
       <CookieBanner
-        message="Unsere Website verwendet Cookies, um u.a. Funktionen für soziale Medien bereitzustellen und den Datenverkehr zu analysieren."
+        message="Unsere Website verwendet Cookies."
         buttonMessage="Okay, verstanden"
         onAccept={() => {}}
         cookie="user-has-accepted-cookies" 
@@ -20,7 +20,7 @@ function CookieNotice() {
   } else {
     return (
       <CookieBanner
-        message="Our site uses cookies to provide social media features and to analyse traffic."
+        message="Our site uses cookies."
         buttonMessage="Got it"
         onAccept={() => {}}
         cookie="user-has-accepted-cookies" 
